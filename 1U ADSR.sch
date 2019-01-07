@@ -14,45 +14,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VcoMaximus:Thonkiconn J1
-U 1 1 5BDB96B0
-P 1350 3050
-F 0 "J1" H 1168 2979 50  0000 R CNN
-F 1 "Gate" H 1168 3070 50  0000 R CNN
-F 2 "4ms-footprints:PJ301M-12" H 1350 3050 50  0001 C CNN
-F 3 "" H 1350 3050 50  0001 C CNN
-	1    1350 3050
-	1    0    0    1   
-$EndComp
-$Comp
-L VcoMaximus:Thonkiconn J2
-U 1 1 5BDB96F6
-P 10600 2100
-F 0 "J2" H 10417 2029 50  0000 R CNN
-F 1 "Out" H 10417 2120 50  0000 R CNN
-F 2 "4ms-footprints:PJ301M-12" H 10600 2100 50  0001 C CNN
-F 3 "" H 10600 2100 50  0001 C CNN
-	1    10600 2100
-	-1   0    0    1   
-$EndComp
-$Comp
-L 4ms-passives:R R1
+L Device:R R1
 U 1 1 5BDB9750
 P 1850 3000
 F 0 "R1" V 1643 3000 50  0000 C CNN
 F 1 "10k" V 1734 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1780 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 3000 50  0001 C CNN
 F 3 "" H 1850 3000 50  0001 C CNN
 	1    1850 3000
 	0    1    1    0   
 $EndComp
 $Comp
-L 4ms-passives:D D1
+L Device:D D1
 U 1 1 5BDB97A9
 P 2100 3250
 F 0 "D1" V 2054 3329 50  0000 L CNN
 F 1 "1n4148" V 2145 3329 50  0000 L CNN
-F 2 "Diodes_SMD:D_0603" H 2100 3250 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 3250 50  0001 C CNN
 F 3 "" H 2100 3250 50  0001 C CNN
 	1    2100 3250
 	0    1    1    0   
@@ -63,18 +41,18 @@ U 1 1 5BDB9827
 P 2400 3000
 F 0 "Q1" H 2591 3046 50  0000 L CNN
 F 1 "BC847" H 2591 2955 50  0000 L CNN
-F 2 "MojaBiblioteka:SOT23-BCE" H 2600 2925 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 2925 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2400 3000 50  0001 L CNN
 	1    2400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4ms-passives:C C1
+L Device:C C1
 U 1 1 5BDB986C
 P 3850 2700
 F 0 "C1" V 3598 2700 50  0000 C CNN
 F 1 "10n" V 3689 2700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3888 2550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3888 2550 50  0001 C CNN
 F 3 "" H 3850 2700 50  0001 C CNN
 	1    3850 2700
 	0    1    1    0   
@@ -102,12 +80,12 @@ Wire Wire Line
 Wire Wire Line
 	2100 3500 2100 3400
 $Comp
-L 4ms-passives:R R2
+L Device:R R2
 U 1 1 5BDB9924
 P 2500 2450
 F 0 "R2" H 2430 2404 50  0000 R CNN
 F 1 "4k7" H 2430 2495 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 2450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 2450 50  0001 C CNN
 F 3 "" H 2500 2450 50  0001 C CNN
 	1    2500 2450
 	-1   0    0    1   
@@ -115,12 +93,12 @@ $EndComp
 Wire Wire Line
 	2500 2800 2500 2700
 $Comp
-L 4ms-passives:R R3
+L Device:R R3
 U 1 1 5BDB99AF
 P 2750 2700
 F 0 "R3" V 2543 2700 50  0000 C CNN
 F 1 "22k" V 2634 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 2700 50  0001 C CNN
 F 3 "" H 2750 2700 50  0001 C CNN
 	1    2750 2700
 	0    1    1    0   
@@ -149,7 +127,7 @@ U 1 1 5BDB9A56
 P 3300 3000
 F 0 "Q2" H 3491 3046 50  0000 L CNN
 F 1 "BC847" H 3491 2955 50  0000 L CNN
-F 2 "MojaBiblioteka:SOT23-BCE" H 3500 2925 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3500 2925 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3300 3000 50  0001 L CNN
 	1    3300 3000
 	1    0    0    -1  
@@ -161,12 +139,12 @@ Wire Wire Line
 Wire Wire Line
 	3000 3000 3100 3000
 $Comp
-L 4ms-passives:R R4
+L Device:R R4
 U 1 1 5BDB9AEA
 P 3400 2300
 F 0 "R4" H 3330 2254 50  0000 R CNN
 F 1 "4k7" H 3330 2345 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3330 2300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3330 2300 50  0001 C CNN
 F 3 "" H 3400 2300 50  0001 C CNN
 	1    3400 2300
 	-1   0    0    1   
@@ -174,12 +152,12 @@ $EndComp
 Wire Wire Line
 	3400 2800 3400 2700
 $Comp
-L 4ms-passives:R R5
+L Device:R R5
 U 1 1 5BDB9BD0
 P 4350 2700
 F 0 "R5" V 4143 2700 50  0000 C CNN
 F 1 "10k" V 4234 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4280 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2700 50  0001 C CNN
 F 3 "" H 4350 2700 50  0001 C CNN
 	1    4350 2700
 	0    1    1    0   
@@ -187,12 +165,12 @@ $EndComp
 Wire Wire Line
 	4000 2700 4100 2700
 $Comp
-L 4ms-passives:D D2
+L Device:D D2
 U 1 1 5BDB9E2D
 P 4100 2950
 F 0 "D2" V 4054 3029 50  0000 L CNN
 F 1 "1n4148" V 4145 3029 50  0000 L CNN
-F 2 "Diodes_SMD:D_0603" H 4100 2950 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 2950 50  0001 C CNN
 F 3 "" H 4100 2950 50  0001 C CNN
 	1    4100 2950
 	0    1    1    0   
@@ -234,7 +212,7 @@ U 1 1 5BDBA169
 P 4900 3000
 F 0 "Q3" H 5091 3046 50  0000 L CNN
 F 1 "BC847" H 5091 2955 50  0000 L CNN
-F 2 "MojaBiblioteka:SOT23-BCE" H 5100 2925 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 2925 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4900 3000 50  0001 L CNN
 	1    4900 3000
 	1    0    0    -1  
@@ -246,12 +224,12 @@ Wire Wire Line
 Wire Wire Line
 	4600 3000 4700 3000
 $Comp
-L 4ms-passives:R R6
+L Device:R R6
 U 1 1 5BDBA318
 P 5000 2450
 F 0 "R6" H 4930 2404 50  0000 R CNN
 F 1 "4k7" H 4930 2495 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 2450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 2450 50  0001 C CNN
 F 3 "" H 5000 2450 50  0001 C CNN
 	1    5000 2450
 	-1   0    0    1   
@@ -316,7 +294,7 @@ U 1 1 5BDBAE86
 P 6250 2900
 F 0 "U1" H 6500 3300 50  0000 C CNN
 F 1 "NE555" H 6250 2900 50  0000 C CNN
-F 2 "4ms-footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6250 2900 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6250 2900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 6250 2900 50  0001 C CNN
 	1    6250 2900
 	1    0    0    -1  
@@ -329,12 +307,12 @@ Wire Wire Line
 Wire Wire Line
 	3400 2700 3650 2700
 $Comp
-L 4ms-passives:C C2
+L Device:C C2
 U 1 1 5BDBB9F6
 P 5650 3400
 F 0 "C2" H 5535 3354 50  0000 R CNN
 F 1 "10n" H 5535 3445 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5688 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 3250 50  0001 C CNN
 F 3 "" H 5650 3400 50  0001 C CNN
 	1    5650 3400
 	-1   0    0    1   
@@ -394,12 +372,12 @@ $EndComp
 Wire Wire Line
 	6250 2500 6250 2400
 $Comp
-L 4ms-passives:R R7
+L Device:R R7
 U 1 1 5BDBD125
 P 7000 2700
 F 0 "R7" V 6793 2700 50  0000 C CNN
 F 1 "100R" V 6884 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 2700 50  0001 C CNN
 F 3 "" H 7000 2700 50  0001 C CNN
 	1    7000 2700
 	0    1    1    0   
@@ -412,7 +390,7 @@ U 1 1 5BDBD72C
 P 7500 2700
 F 0 "RV1" V 7386 2700 50  0000 C CNN
 F 1 "1M" V 7295 2700 50  0000 C CNN
-F 2 "4ms-footprints:POT-9MM-ALPHA" H 7500 2700 50  0001 C CNN
+F 2 "KraakenStuff:POT-9MM-ALPHA" H 7500 2700 50  0001 C CNN
 F 3 "~" H 7500 2700 50  0001 C CNN
 	1    7500 2700
 	0    -1   -1   0   
@@ -429,12 +407,12 @@ Connection ~ 7250 2700
 Wire Wire Line
 	7250 2700 7350 2700
 $Comp
-L 4ms-passives:D D4
+L Device:D D4
 U 1 1 5BDBE44F
 P 7900 2700
 F 0 "D4" H 7900 2484 50  0000 C CNN
 F 1 "1n4148" H 7900 2575 50  0000 C CNN
-F 2 "Diodes_SMD:D_0603" H 7900 2700 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 2700 50  0001 C CNN
 F 3 "" H 7900 2700 50  0001 C CNN
 	1    7900 2700
 	-1   0    0    1   
@@ -447,7 +425,7 @@ U 1 1 5BDBEBAF
 P 7500 3600
 F 0 "RV3" V 7386 3600 50  0000 C CNN
 F 1 "1M" V 7295 3600 50  0000 C CNN
-F 2 "4ms-footprints:POT-9MM-ALPHA" H 7500 3600 50  0001 C CNN
+F 2 "KraakenStuff:POT-9MM-ALPHA" H 7500 3600 50  0001 C CNN
 F 3 "~" H 7500 3600 50  0001 C CNN
 	1    7500 3600
 	0    -1   -1   0   
@@ -457,12 +435,12 @@ Wire Wire Line
 Wire Wire Line
 	7150 3600 7350 3600
 $Comp
-L 4ms-passives:R R9
+L Device:R R9
 U 1 1 5BDBF3E4
 P 7900 3600
 F 0 "R9" V 7693 3600 50  0000 C CNN
 F 1 "4k7" V 7784 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7830 3600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7830 3600 50  0001 C CNN
 F 3 "" H 7900 3600 50  0001 C CNN
 	1    7900 3600
 	0    1    1    0   
@@ -490,7 +468,7 @@ U 1 1 5BDC0705
 P 8800 3350
 F 0 "U2" H 8800 3717 50  0000 C CNN
 F 1 "LM358" H 8800 3626 50  0000 C CNN
-F 2 "4ms-footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8800 3350 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8800 3350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8800 3350 50  0001 C CNN
 	1    8800 3350
 	1    0    0    -1  
@@ -512,12 +490,12 @@ Wire Wire Line
 Wire Wire Line
 	7150 2900 7150 3600
 $Comp
-L 4ms-passives:R R10
+L Device:R R10
 U 1 1 5BDC36FD
 P 9150 3100
 F 0 "R10" H 9080 3054 50  0000 R CNN
 F 1 "100R" H 9080 3145 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 9080 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 3100 50  0001 C CNN
 F 3 "" H 9150 3100 50  0001 C CNN
 	1    9150 3100
 	-1   0    0    1   
@@ -531,7 +509,7 @@ U 1 1 5BDC4EC5
 P 9150 2650
 F 0 "RV2" H 9081 2604 50  0000 R CNN
 F 1 "1M" H 9081 2695 50  0000 R CNN
-F 2 "4ms-footprints:POT-9MM-ALPHA" H 9150 2650 50  0001 C CNN
+F 2 "KraakenStuff:POT-9MM-ALPHA" H 9150 2650 50  0001 C CNN
 F 3 "~" H 9150 2650 50  0001 C CNN
 	1    9150 2650
 	-1   0    0    1   
@@ -548,12 +526,12 @@ Connection ~ 9150 2850
 Wire Wire Line
 	9150 2850 9150 2950
 $Comp
-L 4ms-passives:D D5
+L Device:D D5
 U 1 1 5BDC74EE
 P 8400 2700
 F 0 "D5" H 8400 2484 50  0000 C CNN
 F 1 "1n4148" H 8400 2575 50  0000 C CNN
-F 2 "Diodes_SMD:D_0603" H 8400 2700 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8400 2700 50  0001 C CNN
 F 3 "" H 8400 2700 50  0001 C CNN
 	1    8400 2700
 	-1   0    0    1   
@@ -576,12 +554,12 @@ Connection ~ 8150 2700
 Wire Wire Line
 	8150 2700 8050 2700
 $Comp
-L 4ms-passives:D D3
+L Device:D D3
 U 1 1 5BDCA532
 P 7900 1950
 F 0 "D3" H 7900 2166 50  0000 C CNN
 F 1 "1n4148" H 7900 2075 50  0000 C CNN
-F 2 "Diodes_SMD:D_0603" H 7900 1950 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 1950 50  0001 C CNN
 F 3 "" H 7900 1950 50  0001 C CNN
 	1    7900 1950
 	1    0    0    -1  
@@ -594,7 +572,7 @@ U 1 1 5BDCB826
 P 7500 1950
 F 0 "RV4" V 7386 1950 50  0000 C CNN
 F 1 "1M" V 7295 1950 50  0000 C CNN
-F 2 "4ms-footprints:POT-9MM-ALPHA" H 7500 1950 50  0001 C CNN
+F 2 "KraakenStuff:POT-9MM-ALPHA" H 7500 1950 50  0001 C CNN
 F 3 "~" H 7500 1950 50  0001 C CNN
 	1    7500 1950
 	0    -1   -1   0   
@@ -610,12 +588,12 @@ Wire Wire Line
 Wire Wire Line
 	7300 1950 7350 1950
 $Comp
-L 4ms-passives:R R8
+L Device:R R8
 U 1 1 5BDD21D6
 P 7050 1950
 F 0 "R8" V 6843 1950 50  0000 C CNN
 F 1 "100R" V 6934 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6980 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6980 1950 50  0001 C CNN
 F 3 "" H 7050 1950 50  0001 C CNN
 	1    7050 1950
 	0    1    1    0   
@@ -649,7 +627,7 @@ U 2 1 5BDDF2C6
 P 9750 2050
 F 0 "U2" H 9750 2417 50  0000 C CNN
 F 1 "LM358" H 9750 2326 50  0000 C CNN
-F 2 "4ms-footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9750 2050 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 9750 2050 50  0001 C CNN
 	2    9750 2050
 	1    0    0    -1  
@@ -668,12 +646,12 @@ Wire Wire Line
 	8150 1950 8550 1950
 Connection ~ 8150 1950
 $Comp
-L 4ms-passives:C C3
+L Device:C C3
 U 1 1 5BDE4EAA
 P 8550 2200
 F 0 "C3" H 8435 2154 50  0000 R CNN
 F 1 "4u7" H 8435 2245 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8588 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8588 2050 50  0001 C CNN
 F 3 "" H 8550 2200 50  0001 C CNN
 	1    8550 2200
 	-1   0    0    1   
@@ -743,7 +721,7 @@ U 3 1 5BDF8EF1
 P 1800 4550
 F 0 "U2" H 1758 4596 50  0000 L CNN
 F 1 "LM358" H 1758 4505 50  0000 L CNN
-F 2 "4ms-footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1800 4550 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1800 4550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1800 4550 50  0001 C CNN
 	3    1800 4550
 	1    0    0    -1  
@@ -847,17 +825,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 4400 3500 4300
 $Comp
-L Ja:Header_1x03 J3
-U 1 1 5BE06111
-P 3500 5150
-F 0 "J3" H 3580 5200 50  0000 L CNN
-F 1 "PWR" H 3580 5109 50  0000 L CNN
-F 2 "MojaBiblioteka:Header 1x3" H 3500 5150 50  0001 C CNN
-F 3 "" H 3500 5150 50  0001 C CNN
-	1    3500 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR022
 U 1 1 5BE0617B
 P 3200 4950
@@ -903,23 +870,23 @@ Wire Wire Line
 Wire Wire Line
 	3200 5050 3300 5050
 $Comp
-L 4ms-passives:C C4
+L Device:C C4
 U 1 1 5BE0F619
 P 1150 4350
 F 0 "C4" H 1035 4304 50  0000 R CNN
 F 1 "100n" H 1035 4395 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1188 4200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1188 4200 50  0001 C CNN
 F 3 "" H 1150 4350 50  0001 C CNN
 	1    1150 4350
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4ms-passives:C C5
+L Device:C C5
 U 1 1 5BE0F6FD
 P 1150 4750
 F 0 "C5" H 1035 4704 50  0000 R CNN
 F 1 "100n" H 1035 4795 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1188 4600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1188 4600 50  0001 C CNN
 F 3 "" H 1150 4750 50  0001 C CNN
 	1    1150 4750
 	-1   0    0    1   
@@ -952,6 +919,39 @@ F 1 "GND" H 855 4477 50  0000 C CNN
 F 2 "" H 850 4650 50  0001 C CNN
 F 3 "" H 850 4650 50  0001 C CNN
 	1    850  4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground_Switch J1
+U 1 1 5C348E48
+P 1400 3000
+F 0 "J1" H 1168 2979 50  0000 R CNN
+F 1 "Gate" H 1168 3070 50  0000 R CNN
+F 2 "KraakenStuff:PJ301M-12" H 1400 3000 50  0001 C CNN
+F 3 "~" H 1400 3000 50  0001 C CNN
+	1    1400 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground_Switch J2
+U 1 1 5C349A65
+P 10550 2050
+F 0 "J2" H 10317 2029 50  0000 R CNN
+F 1 "Out" H 10317 2120 50  0000 R CNN
+F 2 "KraakenStuff:PJ301M-12" H 10550 2050 50  0001 C CNN
+F 3 "~" H 10550 2050 50  0001 C CNN
+	1    10550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C34A11A
+P 3500 5150
+F 0 "J3" H 3580 5192 50  0000 L CNN
+F 1 "PWR" H 3580 5101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3500 5150 50  0001 C CNN
+F 3 "~" H 3500 5150 50  0001 C CNN
+	1    3500 5150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
