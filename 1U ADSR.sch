@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:1U ADSR-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -83,8 +84,8 @@ $Comp
 L Device:R R2
 U 1 1 5BDB9924
 P 2500 2450
-F 0 "R2" H 2430 2404 50  0000 R CNN
-F 1 "4k7" H 2430 2495 50  0000 R CNN
+F 0 "R2" H 2700 2400 50  0000 R CNN
+F 1 "4k7" H 2700 2500 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 2450 50  0001 C CNN
 F 3 "" H 2500 2450 50  0001 C CNN
 	1    2500 2450
@@ -304,8 +305,6 @@ Wire Wire Line
 Connection ~ 5000 2700
 Wire Wire Line
 	5000 2700 5000 2600
-Wire Wire Line
-	3400 2700 3650 2700
 $Comp
 L Device:C C2
 U 1 1 5BDBB9F6
@@ -335,16 +334,7 @@ $EndComp
 Wire Wire Line
 	5650 3550 5650 3650
 Wire Wire Line
-	3650 2700 3650 3600
-Wire Wire Line
-	3650 3600 5500 3600
-Wire Wire Line
-	5500 3600 5500 3100
-Wire Wire Line
 	5500 3100 5750 3100
-Connection ~ 3650 2700
-Wire Wire Line
-	3650 2700 3700 2700
 $Comp
 L power:GND #PWR012
 U 1 1 5BDBC5BF
@@ -393,19 +383,8 @@ F 1 "1M" V 7295 2700 50  0000 C CNN
 F 2 "KraakenStuff:POT-9MM-ALPHA" H 7500 2700 50  0001 C CNN
 F 3 "~" H 7500 2700 50  0001 C CNN
 	1    7500 2700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7150 2700 7250 2700
-Wire Wire Line
-	7250 2700 7250 2500
-Wire Wire Line
-	7250 2500 7500 2500
-Wire Wire Line
-	7500 2500 7500 2550
-Connection ~ 7250 2700
-Wire Wire Line
-	7250 2700 7350 2700
 $Comp
 L Device:D D4
 U 1 1 5BDBE44F
@@ -512,19 +491,8 @@ F 1 "1M" H 9081 2695 50  0000 R CNN
 F 2 "KraakenStuff:POT-9MM-ALPHA" H 9150 2650 50  0001 C CNN
 F 3 "~" H 9150 2650 50  0001 C CNN
 	1    9150 2650
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 2800 9150 2850
-Wire Wire Line
-	9000 2650 8950 2650
-Wire Wire Line
-	8950 2650 8950 2850
-Wire Wire Line
-	8950 2850 9150 2850
-Connection ~ 9150 2850
-Wire Wire Line
-	9150 2850 9150 2950
 $Comp
 L Device:D D5
 U 1 1 5BDC74EE
@@ -575,18 +543,10 @@ F 1 "1M" V 7295 1950 50  0000 C CNN
 F 2 "KraakenStuff:POT-9MM-ALPHA" H 7500 1950 50  0001 C CNN
 F 3 "~" H 7500 1950 50  0001 C CNN
 	1    7500 1950
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	7650 1950 7750 1950
-Wire Wire Line
-	7500 1800 7500 1750
-Wire Wire Line
-	7500 1750 7300 1750
-Wire Wire Line
-	7300 1750 7300 1950
-Wire Wire Line
-	7300 1950 7350 1950
 $Comp
 L Device:R R8
 U 1 1 5BDD21D6
@@ -598,10 +558,6 @@ F 3 "" H 7050 1950 50  0001 C CNN
 	1    7050 1950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7200 1950 7300 1950
-Connection ~ 7300 1950
-Connection ~ 5500 3100
 Wire Wire Line
 	3400 2450 3400 2550
 Connection ~ 3400 2700
@@ -666,7 +622,7 @@ L power:GND #PWR014
 U 1 1 5BDE6EA1
 P 8550 2450
 F 0 "#PWR014" H 8550 2200 50  0001 C CNN
-F 1 "GND" H 8555 2277 50  0000 C CNN
+F 1 "GND" H 8650 2450 50  0000 C CNN
 F 2 "" H 8550 2450 50  0001 C CNN
 F 3 "" H 8550 2450 50  0001 C CNN
 	1    8550 2450
@@ -707,13 +663,13 @@ Wire Wire Line
 	1600 3100 1700 3100
 Wire Wire Line
 	1700 3100 1700 3200
-Text Notes 7650 2100 0    50   ~ 0
+Text Notes 7550 2100 0    50   ~ 0
 Release
-Text Notes 7650 2850 0    50   ~ 0
+Text Notes 7550 2850 0    50   ~ 0
 Attack
 Text Notes 7650 3750 0    50   ~ 0
 Sustain
-Text Notes 9250 2850 0    50   ~ 0
+Text Notes 9250 2550 0    50   ~ 0
 Decay
 $Comp
 L Amplifier_Operational:LM358 U2
@@ -954,4 +910,39 @@ F 3 "~" H 3500 5150 50  0001 C CNN
 	1    3500 5150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7200 1950 7300 1950
+Wire Wire Line
+	7500 2100 7500 2150
+Wire Wire Line
+	7500 2150 7300 2150
+Wire Wire Line
+	7300 2150 7300 1950
+Connection ~ 7300 1950
+Wire Wire Line
+	7300 1950 7350 1950
+Wire Wire Line
+	7150 2700 7300 2700
+Wire Wire Line
+	7500 2850 7500 2900
+Wire Wire Line
+	7500 2900 7300 2900
+Wire Wire Line
+	7300 2900 7300 2700
+Connection ~ 7300 2700
+Wire Wire Line
+	7300 2700 7350 2700
+Wire Wire Line
+	9150 2800 9150 2850
+Wire Wire Line
+	9150 2850 9350 2850
+Wire Wire Line
+	9350 2850 9350 2650
+Wire Wire Line
+	9350 2650 9300 2650
+Connection ~ 9150 2850
+Wire Wire Line
+	9150 2850 9150 2950
+Wire Wire Line
+	3400 2700 3700 2700
 $EndSCHEMATC
