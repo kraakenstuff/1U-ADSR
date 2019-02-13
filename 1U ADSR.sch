@@ -70,8 +70,6 @@ F 3 "" H 2100 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 3000 1700 3000
-Wire Wire Line
 	2000 3000 2100 3000
 Wire Wire Line
 	2100 3100 2100 3000
@@ -945,4 +943,6 @@ Wire Wire Line
 	9150 2850 9150 2950
 Wire Wire Line
 	3400 2700 3700 2700
+Wire Wire Line
+	1600 3000 1700 3000
 $EndSCHEMATC
